@@ -1,0 +1,71 @@
+/*
+	320 - 480 => smartphone
+	360 - 640 => smartphone
+	768 - 1024 => TAB
+	1024  => desktop , laptop
+
+*/
+@viewport{
+    width: device-width;
+}
+
+@-ms-viewport{
+    width: device-width;
+}
+@-o-viewport {
+	width: device-width;
+}
+
+
+@media screen and (max-width:480px)
+{
+	#wrapper{
+		/*border:5px solid;*/
+		width:95%;
+	}
+	#header,#menu,#page,#footer{
+		width:100%;
+	}
+	#content,#sidebar{
+		float:none;
+		display:block;
+		width:100%;
+	}
+	.entry p img{
+		float:none;
+		display:block;
+	}
+	.entry p img{
+		margin:0 auto;
+	}
+	.post .title{
+		font-size:150%;
+		padding:5%;
+	}
+	#menu ul li{
+		float:none;
+		display:block;
+		text-align:center;
+	}
+	#menu{
+		height:auto;
+	}
+}
+
+
+@media screen and (min-width:640px) and (max-width:768px) 
+{
+	#wrapper{
+		
+		width:95%;
+	}
+	#header,#menu,#page,#footer{
+		width:95%;
+	}
+	#content{
+		width:60%;
+	}
+	#sidebar{
+		width:30%;
+	}	
+}
